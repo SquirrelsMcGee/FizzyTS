@@ -1,0 +1,21 @@
+{
+  "name": "dispris-fizzbuzzenterprise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "The ultimate enterprise-grade FizzBuzz implementation, featuring extensible architecture and blazing-fast performance.",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/bundle.js --format=cjs",
+    "start": "node ./dist/index.js",
+    "test": "jest --passWithNoTests test"
+  },
+  "author": "dispris",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.5.1",
+    "esbuild": "^0.25.10",
+    "jest": "^30.1.3",
+    "ts-jest": "^29.4.2",
+    "typescript": "^5.9.2"
+  }
+}
