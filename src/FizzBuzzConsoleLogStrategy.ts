@@ -20,6 +20,8 @@ export class FizzBuzzConsoleLogStrategy implements IFizzBuzzLogStrategy {
   }
 
   output(digitTypePairs: DigitTypePair[]) {
+    // Log each output to the console
+    // Tech debt: This does both the mapping and the logging, should be separated
     for (let pair of digitTypePairs) {
       const outputString = this.getOutputString(pair);
       console.log(outputString);
